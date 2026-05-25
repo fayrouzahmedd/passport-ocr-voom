@@ -1,3 +1,8 @@
+import pytesseract
+
+pytesseract.pytesseract.tesseract_cmd = (
+    r"D:\iti\tesseract.exe"
+)
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse
 import cv2

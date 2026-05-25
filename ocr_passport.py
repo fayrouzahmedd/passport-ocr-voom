@@ -1,3 +1,8 @@
+import pytesseract
+
+pytesseract.pytesseract.tesseract_cmd = (
+    r"D:\iti\tesseract.exe"
+)
 import sys
 import os
 import json
@@ -10,7 +15,7 @@ import cv2
 from deep_translator import GoogleTranslator
 
 # Set the Tesseract OCR executable path.
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 
 
 def preprocess_image(image, image_path, output_folder):
